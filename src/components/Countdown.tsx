@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from '../styles/components/Countdown.module.css'
+import { FcOk } from 'react-icons/fc';
+import {BsX, BsPlayFill} from 'react-icons/bs'
 
 let countdownTimeout: NodeJS.Timeout
 
@@ -58,6 +60,7 @@ export function Countdown() {
                     className={styles.countdownButton} 
                 >
                 Ciclo encerrado
+                <FcOk size={20} className={styles.icon}/>
                 </button>
             ) : (
                 <>
@@ -67,11 +70,13 @@ export function Countdown() {
                             className={`${styles.countdownButton} ${styles.countdownButtonActive}`} 
                             onClick={resetCountdown}
                         >
-                        Abandonar ciclo 
+                            Abandonar ciclo 
+                            <BsX size={20} className={styles.icon}/>
                         </button>
                     ) : ( 
                         <button type='button' className={styles.countdownButton} onClick={startCountdown}>
                             Iniciar um ciclo
+                            <BsPlayFill size={20} className={styles.icon}/>
                         </button>
                     )}
                 </>

@@ -61,9 +61,9 @@
     background: var(--blue-dark);
 }
 
-.countdownButtonActive {
+.countdownButtonActive{
     background-color: var(--white);
-    color: var(--title);
+    color: var(--text);
 }
 
 .countdownButtonActive:not(:disabled):hover{
@@ -75,4 +75,9 @@
     background: var(--white);
     color: var(--text);
     cursor: not-allowed; /*mostra o ícone de cursor bloqueado*/
+    border-bottom: 4px solid var(--green);
+}
+
+.icon{
+    margin-left: 15px;
 }
