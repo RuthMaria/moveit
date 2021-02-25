@@ -2,50 +2,22 @@ import { useState, useEffect, useContext } from 'react'
 import styles from '../styles/components/Countdown.module.css'
 import { FcOk } from 'react-icons/fc';
 import {BsX, BsPlayFill} from 'react-icons/bs'
-import { ChallengeContext } from '../contexts/ChallengeContext';
-
-let countdownTimeout: NodeJS.Timeout
+import { CountdownContext } from '../contexts/CountdownContext';
 
 export function Countdown() {
-    const SECONDS_TOTAL = 0.1 * 60
-
-    const { startNewChallenge } = useContext(ChallengeContext)
-
-    const [time, setTime] = useState(SECONDS_TOTAL)
-    const [isActive, setIsActive] = useState(false)
-    const [hasFinished, setHasFinished] = useState(false)
-
-    const minutes = Math.floor(time / 60)
-    const seconds = time % 60
-
+    
+    const {
+        minutes, 
+        seconds, 
+        hasFinished, 
+        isActive, 
+        startCountdown, 
+        resetCountdown
+    } = useContext(CountdownContext)
+    
     //padStar coloco o zero se a string passada não tiver dois caracteres e o split divide em duas partes
     const [minuteLeft, minuteRight] = String(minutes).padStart(2,'0').split('')
     const [secondLeft, secondRight] = String(seconds).padStart(2,'0').split('')
-
-    function startCountdown() {
-        setIsActive(true)
-    }
-
-    function resetCountdown() {
-        clearTimeout(countdownTimeout)
-        setIsActive(false)
-        setTime(SECONDS_TOTAL)
-    }
-
-    useEffect(() => {
-
-        if(isActive && time > 0){
-            countdownTimeout = setTimeout(() => {
-                setTime(time - 1)
-            }, 1000);
-
-        } else if (isActive && time === 0){
-            setHasFinished(true)
-            setIsActive(false)
-            startNewChallenge()
-        }
-        
-    }, [isActive, time])
 
     return(
         <div>
