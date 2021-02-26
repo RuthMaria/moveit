@@ -47,6 +47,7 @@ Services:
   * TypeScript
   * Next
   * CSS module
+  * Cookie
 
 
 <a id="run"></a><br>

@@ -9,7 +9,7 @@
 
 .experienceBar span {
     font-size: 1rem;
-    color: var(--title);
+    color: var(--blue-dark);
     font-weight: 500;
 }
 
