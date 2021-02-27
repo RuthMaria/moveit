@@ -14,11 +14,11 @@
 
 
 <p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=FF9000&labelColor=000000" alt="PRs welcome!" />
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=#5965e0&labelColor=000000" alt="PRs welcome!" />
 
-  <img alt="License" src="https://img.shields.io/badge/Made%20by-Ruth%20Maria-FF9000">
+  <img alt="License" src="https://img.shields.io/badge/Made%20by-Ruth%20Maria-f">
 
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=FF9000&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=#5965e0&labelColor=000000">
 </p>
 
 <br>
@@ -26,11 +26,8 @@
 ## :books: About
 
 
-It is an application that does time management.
+It is an application that does time management like the pomodoro. The each completed cycle  the user goes up one level if finished the challenge.
 
-Services:
-
-* Start time
 
 <a id="execution"></a><br>
 
@@ -54,15 +51,9 @@ Services:
 
 ## 🚀 How to run the project
 
-<br>
-
-### :small_orange_diamond: Requirements
-
-* [Application backend](https://github.com/RuthMaria/GoBarber-backend)
 
 <br>
 
-### :small_orange_diamond: Commands
 - Clone this repository
 
 ```

@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { ChallengeContext } from '../contexts/ChallengeContext'
 import styles from '../styles/components/LevelUpModal.module.css'
+import {BsX} from 'react-icons/bs'
 
 export function LevelUpModal() {
 
@@ -13,10 +14,10 @@ export function LevelUpModal() {
                 <header>{level}</header>
 
                 <strong>Parabéns</strong>
-                <p>Você alcançou um novo level.</p>
+                <p>Você alcançou um novo nível.</p>
 
                 <button type="button" onClick={closeLevelUpModal}>
-                    <img src="/icons/close.svg" alt="Fechar modal"/>
+                    <BsX size={26} />
                 </button>
             </div>
         </div>

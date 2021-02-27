@@ -51,3 +51,8 @@
     font-size: 0px;
 }
 
+.container button:hover {
+    color: var(--blue);
+}
+
+
