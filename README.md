@@ -26,7 +26,7 @@
 ## :books: About
 
 
-Time management application like the pomodoro - the technique consists of using a stopwatch to divide the work into periods of 25 minutes, separated by brief intervals. For each 25-minute cycle completed, the user will receive a challenge, which consists of performing a physical exercise to exercise, and if completed, will level up.
+Time management application like the pomodoro - the technique consists of using a stopwatch to divide the work into periods of 25 minutes, separated by brief intervals. For each 25 minutes completed cycle, the user will receive a challenge, which consists of performing a physical exercise to exercise, and if completed, will level up.
 
 <a id="execution"></a><br>
 
