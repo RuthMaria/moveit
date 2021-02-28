@@ -26,8 +26,7 @@
 ## :books: About
 
 
-It is an application that does time management like the pomodoro. The each completed cycle  the user goes up one level if finished the challenge.
-
+Time management application like the pomodoro - the technique consists of using a stopwatch to divide the work into periods of 25 minutes, separated by brief intervals. For each 25-minute cycle completed, the user will receive a challenge, which consists of performing a physical exercise to exercise, and if completed, will level up.
 
 <a id="execution"></a><br>
 
@@ -44,6 +43,7 @@ It is an application that does time management like the pomodoro. The each compl
   * TypeScript
   * Next
   * CSS module
+  * Content API
   * Cookie
 
 
